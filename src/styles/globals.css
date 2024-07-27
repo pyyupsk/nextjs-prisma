@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 24 20% 90%;
+        --foreground: 198 20% 10%;
+        --muted: 30 9% 79%;
+        --muted-foreground: 207 10% 18%;
+        --popover: 27 10% 82%;
+        --popover-foreground: 198 20% 10%;
+        --card: 18 13% 84%;
+        --card-foreground: 198 20% 10%;
+        --border: 30 9% 79%;
+        --input: 30 9% 79%;
+        --primary: 110 46% 65%;
+        --primary-foreground: 24 20% 90%;
+        --secondary: 27 10% 82%;
+        --secondary-foreground: 198 13% 16%;
+        --accent: 27 9% 75%;
+        --accent-foreground: 198 13% 16%;
+        --destructive: 0 68% 68%;
+        --destructive-foreground: 24 20% 90%;
+        --ring: 110 46% 65%;
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 198 20% 10%;
+        --foreground: 0 0% 85%;
+        --muted: 207 8% 21%;
+        --muted-foreground: 170 3% 64%;
+        --popover: 207 10% 18%;
+        --popover-foreground: 0 0% 85%;
+        --card: 198 13% 16%;
+        --card-foreground: 0 0% 85%;
+        --border: 207 8% 21%;
+        --input: 207 8% 21%;
+        --primary: 110 46% 65%;
+        --primary-foreground: 198 20% 10%;
+        --secondary: 207 10% 18%;
+        --secondary-foreground: 170 4% 71%;
+        --accent: 207 9% 25%;
+        --accent-foreground: 170 4% 71%;
+        --destructive: 0 68% 68%;
+        --destructive-foreground: 198 20% 10%;
+        --ring: 110 46% 65%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+
+    ::-webkit-scrollbar {
+        @apply h-2 w-2;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-background;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply rounded-full bg-primary;
+    }
+}
+
+@layer base {
+    .required {
+        @apply after:ml-0.5 after:text-destructive after:content-['*'];
+    }
+
+    .optional {
+        @apply after:ml-0.5 after:text-muted-foreground after:content-['(optional)'];
+    }
+}
