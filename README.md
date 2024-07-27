@@ -24,7 +24,7 @@ This is a simple task manager application built using Next.js and Prisma ORM. Th
 
 -   **Framework:** [Next.js](https://nextjs.org/)
 -   **ORM:** [Prisma](https://www.prisma.io/)
--   **Database:** [Cockroach DB](https://www.cockroachlabs.com/) (default) or any other supported database
+-   **Database:** SQLite (default) or any other supported database
 
 ## Installation
 
@@ -90,6 +90,5 @@ Happy coding! If you have any questions or feedback, feel free to open an issue 
 
 -   [Next.js Documentation](https://nextjs.org/docs)
 -   [Prisma Documentation](https://www.prisma.io/docs)
--   [Cockroach DB Documentation](https://www.cockroachlabs.com/docs/)
 
 ---

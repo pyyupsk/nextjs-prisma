@@ -9,6 +9,7 @@
         "format:fix": "prettier --write . --list-different",
         "generate": "prisma generate",
         "lint": "next lint",
+        "migrate": "prisma migrate dev",
         "start": "next start"
     },
     "dependencies": {
